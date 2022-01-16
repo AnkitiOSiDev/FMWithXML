@@ -16,6 +16,12 @@
 		BCC41DEE2791CD7400703F15 /* FMWithXMLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC41DED2791CD7400703F15 /* FMWithXMLTests.swift */; };
 		BCC41DF82791CD7400703F15 /* FMWithXMLUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC41DF72791CD7400703F15 /* FMWithXMLUITests.swift */; };
 		BCC41DFA2791CD7400703F15 /* FMWithXMLUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC41DF92791CD7400703F15 /* FMWithXMLUITestsLaunchTests.swift */; };
+		BCC41E072791D6CE00703F15 /* ChannelListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC41E062791D6CE00703F15 /* ChannelListController.swift */; };
+		BCC41E472794A69100703F15 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC41E462794A69100703F15 /* ListViewModel.swift */; };
+		BCC41E492794A6A100703F15 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC41E482794A6A100703F15 /* NetworkManager.swift */; };
+		BCC41E4B2794A6AF00703F15 /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC41E4A2794A6AF00703F15 /* ImageManager.swift */; };
+		BCC41E502794A6F200703F15 /* Channels.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC41E4F2794A6F200703F15 /* Channels.swift */; };
+		BCC41E522794AAC600703F15 /* ChannelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC41E512794AAC600703F15 /* ChannelCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,12 @@
 		BCC41DF32791CD7400703F15 /* FMWithXMLUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FMWithXMLUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCC41DF72791CD7400703F15 /* FMWithXMLUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMWithXMLUITests.swift; sourceTree = "<group>"; };
 		BCC41DF92791CD7400703F15 /* FMWithXMLUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMWithXMLUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BCC41E062791D6CE00703F15 /* ChannelListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelListController.swift; sourceTree = "<group>"; };
+		BCC41E462794A69100703F15 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		BCC41E482794A6A100703F15 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		BCC41E4A2794A6AF00703F15 /* ImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
+		BCC41E4F2794A6F200703F15 /* Channels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Channels.swift; sourceTree = "<group>"; };
+		BCC41E512794AAC600703F15 /* ChannelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +114,11 @@
 				BCC41DD62791CD6E00703F15 /* AppDelegate.swift */,
 				BCC41DD82791CD6E00703F15 /* SceneDelegate.swift */,
 				BCC41DDA2791CD6F00703F15 /* ViewController.swift */,
+				BCC41E062791D6CE00703F15 /* ChannelListController.swift */,
+				BCC41E512794AAC600703F15 /* ChannelCell.swift */,
+				BCC41E462794A69100703F15 /* ListViewModel.swift */,
+				BCC41E4D2794A6DA00703F15 /* Models */,
+				BCC41E4C2794A6B500703F15 /* Manager */,
 				BCC41DDC2791CD6F00703F15 /* Main.storyboard */,
 				BCC41DDF2791CD7300703F15 /* Assets.xcassets */,
 				BCC41DE12791CD7300703F15 /* LaunchScreen.storyboard */,
@@ -125,6 +142,23 @@
 				BCC41DF92791CD7400703F15 /* FMWithXMLUITestsLaunchTests.swift */,
 			);
 			path = FMWithXMLUITests;
+			sourceTree = "<group>";
+		};
+		BCC41E4C2794A6B500703F15 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				BCC41E482794A6A100703F15 /* NetworkManager.swift */,
+				BCC41E4A2794A6AF00703F15 /* ImageManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		BCC41E4D2794A6DA00703F15 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BCC41E4F2794A6F200703F15 /* Channels.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +292,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCC41E492794A6A100703F15 /* NetworkManager.swift in Sources */,
+				BCC41E522794AAC600703F15 /* ChannelCell.swift in Sources */,
+				BCC41E472794A69100703F15 /* ListViewModel.swift in Sources */,
+				BCC41E4B2794A6AF00703F15 /* ImageManager.swift in Sources */,
 				BCC41DDB2791CD6F00703F15 /* ViewController.swift in Sources */,
 				BCC41DD72791CD6E00703F15 /* AppDelegate.swift in Sources */,
+				BCC41E502794A6F200703F15 /* Channels.swift in Sources */,
 				BCC41DD92791CD6E00703F15 /* SceneDelegate.swift in Sources */,
+				BCC41E072791D6CE00703F15 /* ChannelListController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
